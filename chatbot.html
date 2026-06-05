@@ -193,7 +193,7 @@
             containerElem.scrollTop = containerElem.scrollHeight;
           } 
         }, [chatMessages])
-        
+
         // returining list of messages
         return (
           <div className="chat-messages-container"
@@ -214,28 +214,7 @@
 
       function App() {
         //Lifting states for every component to be abe to access chatmessages when needed.
-        const [chatMessages, setChatMessages] = React.useState([
-          {
-            message: "Hello chatbot",
-            sender: "user",
-            id: "id1",
-          },
-          {
-            message: "Hello! How can I help you?",
-            sender: "robot",
-            id: "id2",
-          },
-          {
-            message: "what is todays date?",
-            sender: "user",
-            id: "id3",
-          },
-          {
-            message: "Today is June 2",
-            sender: "robot",
-            id: "id4",
-          },
-        ]);
+        const [chatMessages, setChatMessages] = React.useState([]);
         //array destructuring
         //const [chatmessages, setChatMessages] = array;
         //const chatMessages = array[0];
